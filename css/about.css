@@ -1,0 +1,66 @@
+/* About section styles */
+.about {
+    padding: 6rem 0;
+    background-color: var(--bg-color);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.about-text p {
+    font-size: 1.125rem;
+    text-align: justify;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.skills-column h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.skills-column ul {
+    list-style: none;
+}
+
+.skills-column li {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.skills-column li::before {
+    /* content: "→"; */
+    content: "🔵";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+/* .skills-column li::after {
+    content: "⭐";
+} */
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+}
