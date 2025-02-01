@@ -1,26 +1,3 @@
-// export function initializeContact() {
-//     const form = document.getElementById('contact-form');
-
-//     form.addEventListener('submit', async (e) => {
-//         e.preventDefault();
-
-//         const formData = {
-//             name: form.name.value,
-//             email: form.email.value,
-//             message: form.message.value
-//         };
-
-//         // Here you would typically send the form data to a server
-//         // For now, we'll just log it to the console
-//         console.log('Form submitted:', formData);
-
-//         // Show success message
-//         alert('Message sent successfully!');
-
-//         // Reset form
-//         form.reset();
-//     });
-// }
 
 // Google sheet 
 // for contact form 
