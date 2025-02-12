@@ -24,7 +24,8 @@
     font-weight: bold;
     text-decoration: none;
     color: var(--text-color);
-    background: linear-gradient(135deg, #6d28d9, #2563eb);
+    /* background: linear-gradient(135deg, #6d28d9, #2563eb); */
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -57,7 +58,8 @@
 
 .menu-btn i {
     font-size: 1.5rem;
-    color: #2563eb;
+    /* color: #2563eb; */
+    color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
