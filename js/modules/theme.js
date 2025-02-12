@@ -14,6 +14,10 @@ const themes = {
     ocean: {
         icon: '🌊',
         label: 'Ocean'
+    },
+    love: {
+        icon: '💗',
+        label: 'Love'
     }
 };
 
@@ -72,5 +76,6 @@ export function initializeTheme() {
     
     function updateCurrentTheme(theme) {
         currentTheme.innerHTML = `${themes[theme].icon} ${themes[theme].label}`;
+        // currentTheme.innerHTML = `${themes[theme].icon }`;
     }
 }
