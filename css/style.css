@@ -10,6 +10,8 @@
     --border-color: #e5e7eb;
     --container-width: 1280px;
     --header-height: 64px;
+    --footer-bg: #3a1674;
+    --footer-text: ;
 }
 
 /* Dark theme */
@@ -22,6 +24,8 @@
     --bg-color: #111827;
     --bg-alt: #1f2937;
     --border-color: #374151;
+    --footer-bg: #111827;
+    --footer-text: ;
 }
 
 /* Sunset theme */
@@ -33,6 +37,8 @@
     --bg-color: #fffbeb;
     --bg-alt: #fef3c7;
     --border-color: #fcd34d;
+    --footer-bg: #ba7806;
+    --footer-text: ;
 }
 
 /* Ocean theme */
@@ -44,6 +50,21 @@
     --bg-color: #f0f9ff;
     --bg-alt: #e0f2fe;
     --border-color: #7dd3fc;
+    --footer-bg: #084a68;
+    --footer-text: ;
+}
+
+/* Love Theme */
+[data-theme="love"] {
+    --primary-color: #ff0099;
+    --primary-hover: #ff73c3;
+    --text-color: #0f172a;
+    --text-light: #ff0099;
+    --bg-color: #ffe5ec;
+    --bg-alt: #ffc5e4;
+    --border-color: #ffacd8;
+    --footer-bg: #8c0857;
+    --footer-text: ;
 }
 
 * {
