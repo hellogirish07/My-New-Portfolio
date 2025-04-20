@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <header class="header" data-aos="fade-down">
+    <header class="header">
         <div class="container">
             <a href="#" class="logo">Girish Suthar</a>
             <nav class="nav">
@@ -50,18 +50,18 @@
     </header>
 
     <main>
-        <section id="home" class="hero" data-aos="fade-right">
+        <section id="home" class="hero">
             <div class="container">
-                <h1 class="hero-title">Hi, I'm
+                <h1 class="hero-title" data-aos="fade-up">Hi, I'm
                     <span class="gradient-text">GIRISH SUTHAR</span>
                 </h1>
-                <p class="hero-subtitle">Student at Charted Institute of Technology, Abu Road, Rajasthan</p>
+                <p class="hero-subtitle" data-aos="fade-up">Student at Charted Institute of Technology, Abu Road, Rajasthan</p>
                 <!-- <p class="hero-subtitle">Sirohi, Rajasthan</p> -->
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Contact Me</a>
-                    <a href="#projects" class="btn btn-outline">View Work</a>
+                    <a href="#contact" class="btn btn-primary" data-aos="fade-right">Contact Me</a>
+                    <a href="#projects" class="btn btn-outline" data-aos="fade-left">View Work</a>
                 </div>
-                <div class="scroll-indicator">
+                <div class="scroll-indicator" data-aos="fade-up">
                     <div class="chevron"></div>
                 </div>
             </div>
@@ -74,19 +74,19 @@
                     <div class="about-image" data-aos="fade-right">
                         <img src="/image/gk.jpg" alt="Profile">
                     </div>
-                    <div class="about-text" data-aos="fade-left">
-                        <p>My name is Girish Suthar, and I hail from Sirohi, Rajasthan, popularly known as the 'City of
+                    <div class="about-text" >
+                        <p data-aos="fade-left">My name is Girish Suthar, and I hail from Sirohi, Rajasthan, popularly known as the 'City of
                             God.' Currently, I am based in Abu Road.</p>
-                        <p>I completed my secondary education at Adarsh Vidya Mandir, Senior Secondary School, Sirohi,
+                        <p data-aos="fade-left">I completed my secondary education at Adarsh Vidya Mandir, Senior Secondary School, Sirohi,
                             achieving 77.33%, and my senior secondary education with an impressive 91.60%. I am
                             presently pursuing a Bachelor of Technology in Computer Science and Engineering at the
                             Chartered Institute of Technology, Abu Road, affiliated with Bikaner Technical University.
                         </p>
-                        <p>I am passionate about helping others whenever possible and have a deep interest in music and
+                        <p data-aos="fade-left">I am passionate about helping others whenever possible and have a deep interest in music and
                             e-sports. I enjoy engaging in various sports, including cricket, badminton, table tennis,
                             football, and chess, along with video gaming.</p>
                         <div class="skills-grid">
-                            <div class="skills-column">
+                            <div class="skills-column" data-aos="fade-left">
                                 <h3>Skills</h3>
                                 <ul>
                                     <li>HTML & CSS</li>
@@ -95,7 +95,7 @@
                                     <li>React.js</li>
                                 </ul>
                             </div>
-                            <div class="skills-column">
+                            <div class="skills-column" data-aos="fade-left">
                                 <h3>Skills</h3>
                                 <ul>
                                     <li>Pyhon</li>
@@ -116,17 +116,17 @@
                     <div class="resume-image" data-aos="fade-right">
                         <img src="/image/resume.jpg" alt="resume img">
                     </div>
-                    <div class="resume-text" data-aos="fade-left">
-                        <h2 class="gradient-text">Skills</h2>
-                        <ul>
-                            <h3 class="gradient-text">Soft Skills</h3>
+                    <div class="resume-text" >
+                        <h2 class="gradient-text" data-aos="fade-left">Skills</h2>
+                        <ul data-aos="fade-left">
+                            <h3 class="gradient-text" >Soft Skills</h3>
                             <li>Fast learner with a strong ability to adapt to new challenges.</li>
                             <li>Excellent communication skills and confidence when presenting to an audience.</li>
                             <li>Effective team player with collaborative working abilities.</li>
                         </ul>
                         <br>
 
-                        <ul>
+                        <ul data-aos="fade-left">
                             <h3 class="gradient-text">Technical Skills</h3>
                             <li>Programming Languages: Java, Python, C, C++</li>
                             <li>Web Development: HTML, CSS, JavaScript</li>
@@ -135,7 +135,7 @@
                         </ul>
                         <br>
 
-                        <ul>
+                        <ul data-aos="fade-left">
                             <h3 class="gradient-text">Hobbies</h3>
                             <li>Enjoy cycling and listening to music during leisure time.</li>
                             <li>Passionate about playing board games, video games, and e-sports.</li>
@@ -144,12 +144,12 @@
                         </ul>
                         <br>
 
-                        <h2 class="gradient-text">Education</h2>
-                        <ul>Chartered Institute of Technology, Abu Road, Sirohi, Rajasthan
+                        <h2 class="gradient-text" data-aos="fade-left">Education</h2>
+                        <ul data-aos="fade-left">Chartered Institute of Technology, Abu Road, Sirohi, Rajasthan
                             <li>B.Tech in Computer Science & Engineering</li>
                             <li>October 2021 – Present</li>
                         </ul>
-                        <ul>Adarsh Vidya Mandir, Senior Secondary School, Sirohi, Rajasthan</ul>
+                        <ul data-aos="fade-left">Adarsh Vidya Mandir, Senior Secondary School, Sirohi, Rajasthan</ul>
                     </div>
                 </div>
             </div>
@@ -159,7 +159,7 @@
             <div class="container">
                 <h2 class="section-title" data-aos="fade-down">My <span class="gradient-text">Projects</span></h2>
                 <div class="projects-grid" id="projects-grid"></div>
-                <div class="project-button" data-aos="fade-up">
+                <div class="project-button" >
                     <a href="https://girish18-projects.netlify.app/" class="btn btn-primary">View More</a>
                 </div>
             </div>
@@ -189,8 +189,7 @@
                         </div>
                     </div>
                     
-                    <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST"
-                        name="contact-form" data-aos="fade-left">
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" name="contact-form" data-aos="fade-left">
                         <input type="hidden" name="access_key" value="33d44239-b74e-45c4-be8a-5c9f3feaab1d">
                         <div class="form-group">
                             <label for="name" class="gradient-text">Name</label>
