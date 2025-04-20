@@ -36,6 +36,7 @@ function createProjectCard(project) {
     card.className = 'project-card';
     
     card.innerHTML = `
+    <div class="project-image-container" data-aos="fade-up">
         <img src="${project.image}" alt="${project.title}" class="project-image">
         <div class="project-content">
             <h3 class="project-title">${project.title}</h3>
@@ -47,6 +48,7 @@ function createProjectCard(project) {
                 View Project →
             </a>
         </div>
+    </div>
     `;
     
     return card;
