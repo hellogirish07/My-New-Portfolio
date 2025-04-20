@@ -14,6 +14,9 @@
     <!-- Favicon -->
     <link type="image/png" sizes="16x16" rel="icon" href="/image/icons8-portfolio-16.png">
 
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
@@ -26,7 +29,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" data-aos="fade-down">
         <div class="container">
             <a href="#" class="logo">Girish Suthar</a>
             <nav class="nav">
@@ -47,7 +50,7 @@
     </header>
 
     <main>
-        <section id="home" class="hero">
+        <section id="home" class="hero" data-aos="fade-right">
             <div class="container">
                 <h1 class="hero-title">Hi, I'm
                     <span class="gradient-text">GIRISH SUTHAR</span>
@@ -66,12 +69,12 @@
 
         <section id="about" class="about">
             <div class="container">
-                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <h2 class="section-title" data-aos="fade-down" >About <span class="gradient-text">Me</span></h2>
                 <div class="about-content">
-                    <div class="about-image">
+                    <div class="about-image" data-aos="fade-right">
                         <img src="/image/gk.jpg" alt="Profile">
                     </div>
-                    <div class="about-text">
+                    <div class="about-text" data-aos="fade-left">
                         <p>My name is Girish Suthar, and I hail from Sirohi, Rajasthan, popularly known as the 'City of
                             God.' Currently, I am based in Abu Road.</p>
                         <p>I completed my secondary education at Adarsh Vidya Mandir, Senior Secondary School, Sirohi,
@@ -108,12 +111,12 @@
 
         <section id="resume" class="resume">
             <div class="container">
-                <h2 class="section-title">My <span class="gradient-text">Resume</span></h2>
+                <h2 class="section-title" data-aos="fade-down" >My <span class="gradient-text">Resume</span></h2>
                 <div class="resume-content">
-                    <div class="resume-image">
+                    <div class="resume-image" data-aos="fade-right">
                         <img src="/image/resume.jpg" alt="resume img">
                     </div>
-                    <div class="resume-text">
+                    <div class="resume-text" data-aos="fade-left">
                         <h2 class="gradient-text">Skills</h2>
                         <ul>
                             <h3 class="gradient-text">Soft Skills</h3>
@@ -154,9 +157,9 @@
 
         <section id="projects" class="projects">
             <div class="container">
-                <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+                <h2 class="section-title" data-aos="fade-down">My <span class="gradient-text">Projects</span></h2>
                 <div class="projects-grid" id="projects-grid"></div>
-                <div class="project-button">
+                <div class="project-button" data-aos="fade-up">
                     <a href="https://girish18-projects.netlify.app/" class="btn btn-primary">View More</a>
                 </div>
             </div>
@@ -164,9 +167,9 @@
 
         <section id="contact" class="contact">
             <div class="container">
-                <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+                <h2 class="section-title" data-aos="fade-down">Get in <span class="gradient-text">Touch</span></h2>
                 <div class="contact-content">
-                    <div class="contact-info">
+                    <div class="contact-info" data-aos="fade-right">
                         <h3>Contact Information</h3>
                         <div class="info-item">
                             <i class="fa-solid fa-user"></i>
@@ -187,7 +190,7 @@
                     </div>
                     
                     <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST"
-                        name="contact-form">
+                        name="contact-form" data-aos="fade-left">
                         <input type="hidden" name="access_key" value="33d44239-b74e-45c4-be8a-5c9f3feaab1d">
                         <div class="form-group">
                             <label for="name" class="gradient-text">Name</label>
@@ -212,7 +215,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
@@ -236,6 +239,15 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
 
     <script src="js/main.js" type="module"></script>
 </body>
