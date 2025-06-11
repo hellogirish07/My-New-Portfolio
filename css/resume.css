@@ -33,6 +33,10 @@
     color: var(--primary-color);
 } */
 
+.resume-download {
+    margin-top: 15px;
+}
+
 @media (max-width: 768px) {
     .resume-content {
         grid-template-columns: 1fr;
