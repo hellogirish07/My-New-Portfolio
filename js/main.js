@@ -13,3 +13,16 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeFooter();
     initializeTheme();
 });
+
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+const resumeLink = document.getElementById("resume-link");
+const fileURL = "./Resume.pdf";
+
+if (isMobile) {
+  resumeLink.setAttribute("href", fileURL);
+  resumeLink.setAttribute("target", "_blank");
+  resumeLink.innerText = "View Resume";
+} else {
+  resumeLink.setAttribute("href", fileURL);
+  resumeLink.setAttribute("download", "Resume.pdf");
+}
